@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+header
+{
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    position: fixed;        /*Permite que el header se quede siempre estable en esa posicion*/
+    top: 0;                 /*esta acompañado del fixed, hace que siempre este en 0 y 0 de left y top*/
+    left: 0;
+    opacity: 0.95;           /*Le agrega opacidad al menu, solo tiene valores de 0 a 1*/
+}
+
+/*Primer nav*/
+.nav1
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo
+{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0 50px;            /*Permite acomodar el texto respecto el padding de top,bottom,right, left*/
+    line-height: 80px;          /*sirve para centrar el texto, debes ser igual que el height del header*/
+    text-decoration: none;
+    
+}
+
+.nav-link
+{
+    text-decoration: none;
+    color: rgb(99, 102, 102);
+}
+
+.nav-menu
+{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item
+{
+    font-size: 15px;
+    margin: 0 10px;
+    line-height: 80px;
+    
+}
+
+/*Primer section*/
+
+.sectionA
+{
+    width: 100%;
+    height: 602px;
+    padding-top: 80px;              /*Permite colocar debajo del menu el section, sin que se tape*/
+    display: inline-flex;
+    flex-wrap: wrap;                /*Permite que una vez acabado el tamaño del navegador, el sig elemento, se baje*/
+}
+
+.div-containerA
+{
+    width: 50%;
+    height: 523px;
+}
+
+.div-imgA
+{
+    width: 50%;
+    height: 523px;
+}
+
+.imgA       /*esta clase sirve para poder darle los tamaños correctos a la imagen segun el contenedor de div-imgA*/
+{
+    width: 100%;
+    height: 100%;
+}
+
+.tituloA
+{
+    font-weight: bold;
+    font-size: 35px;
+    color: rgb(22, 22, 106);
+    width: 80%;
+    margin: auto;
+}
+
+.parrafoA
+{
+    width: 80%;
+    margin: auto;
+    font-size: 25px;
+}
+
+.iconosA
+{
+    width: 50%;
+    display: inline-flex;
+    margin-left: 60px;                          /*Centro los elementos en la pagina*/
+    margin-right: 10px;
+    justify-content: space-between;             /*Le doy un espacio entre elementos*/
+    
+}
+
+.iconSchedule
+{
+    width: 50%;
+    display: block;
+    margin-top: 60px;
+    margin-left: 60px;
+    margin-right: 10px;
+}
+
+.div-containerUbication
+{
+    width: 550px;
+    height: 70px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgba(191, 191, 191, 0.22);
+}
+
+/*Segundo menu*/
+
+.nav2
+{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    background-color: gray;
+}
+
+.nav-menu2
+{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu2-item
+{
+    font-size: 15px;
+    margin: 0 10px;
+    line-height: 80px;
+}
+
+.imgB
+{
+    width: 100px;
+    height: auto;
+}
